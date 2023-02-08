@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # javascript
 
-curso de javaScript One Bit Code
+# curso de javaScript One Bit Code
