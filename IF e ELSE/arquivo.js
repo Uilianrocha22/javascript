@@ -1,11 +1,11 @@
-const time = prompt("informe seu time :");
+const team = prompt("informe seu time :");
 
-if (time === "palmeiras") {
+if (team === "palmeiras") {
   alert("Nosso Verdão Querido");
-} else if (time === "corinthians") {
+} else if (team === "corinthians") {
   alert("voce é gamba");
-} else if (time === "flamengo") {
+} else if (team === "flamengo") {
   alert("vice de novo kkkk");
 } else {
-  alert("time desconhecido");
+  alert("team desconhecido");
 }
