@@ -1,2 +1,3 @@
 # javascript
- curso de javaScript do curso em video
+
+curso de javaScript One Bit Code
