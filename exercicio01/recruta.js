@@ -5,14 +5,8 @@ const anoDeNascimento = prompt("Qual seu ano de nascimento ?");
 
 alert(
   "Recruta cadastrado com sucesso !\n" +
-    "\nNome completo:" +
-    " " +
-    primeiroNome +
-    " " +
-    sobrenome +
-    "\nFormação:" +
-    " " +
-    campoDeEstudo +
+    ` \nNome completo: ${primeiroNome} ${sobrenome}` +
+    ` \nFormação: ${campoDeEstudo}` +
     "\nIdade:" +
     " " +
     (2023 - anoDeNascimento)

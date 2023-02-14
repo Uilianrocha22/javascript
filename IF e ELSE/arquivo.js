@@ -1,3 +1,5 @@
+var nome = "uilian";
+
 const team = prompt("informe seu time :");
 
 if (team === "palmeiras") {
@@ -6,6 +8,6 @@ if (team === "palmeiras") {
   alert("voce é gamba");
 } else if (team === "flamengo") {
   alert("vice de novo kkkk");
-} else {
+} else if (nome) {
   alert("team desconhecido");
 }
