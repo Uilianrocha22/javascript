@@ -1,13 +1,11 @@
-var nome = "uilian";
+const team = prompt("Informe a cor do seu time do coração? :");
 
-const team = prompt("informe seu time :");
-
-if (team === "palmeiras") {
-  alert("Nosso Verdão Querido");
-} else if (team === "corinthians") {
-  alert("voce é gamba");
-} else if (team === "flamengo") {
-  alert("vice de novo kkkk");
-} else if (nome) {
-  alert("team desconhecido");
+if (team === "verde e branco") {
+  alert("Seu time do coração é o Palmeiras");
+} else if (team === "preto e branco") {
+  alert("Seu time do coração é o corinthians");
+} else if (team === "vermelho e preto") {
+  alert("Seu time do coração é o flamengo");
+} else {
+  alert("time desconhecido");
 }
