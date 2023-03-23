@@ -33,45 +33,59 @@ function calcularAreaLosango() {
   return (diagonalMaior * diagonalMenor) / 2;
 }
 
-let opçoes = "";
-
-while (opçoes !== "7") {
-  opçoes = prompt(
+function exibirMenu() {
+  return prompt(
     `    Bem vindo(a) á Calculadora Geometrica!\n
-        1. Calcular área do Triângulo
-        2. Calcular área do Retângulo
-        3. Calcular área do Quadrado
-        4. Calcular área do Trapézio
-        5. Calcular área do Círculo
-        6. Calcular área do Losango
-        7. sair
-     `
+       1. Calcular área do Triângulo
+       2. Calcular área do Retângulo
+       3. Calcular área do Quadrado
+       4. Calcular área do Trapézio
+       5. Calcular área do Círculo
+       6. Calcular área do Losango
+       7. sair
+    `
   );
+}
 
-  switch (opçoes) {
-    case "1":
-      alert(`Resultado: ${calcularAreaTriangulo()}`);
-      break;
-    case "2":
-      alert(`Resultado: ${calcularAreaRetangulo()}`);
-      break;
-    case "3":
-      alert(`Resultado: ${calcularAreaQuadrado()}`);
-      break;
-    case "4":
-      alert(`Resultado: ${calcularAreatrapezio()}`);
-      break;
-    case "5":
-      alert(`Resultado: ${calcularAreaCirculo()}`);
-      break;
-    case "6":
-      alert(`Resultado: ${calcularAreaLosango()}`);
-      break;
-    case "7":
-      alert(`Saindo...`);
-      break;
-    default:
-      alert(`Opção invalida...`);
-      break;
+function executar() {
+  let opçoes = "";
+
+  while (opçoes !== "7") {
+    opçoes = exibirMenu();
+
+    let resultado = "";
+
+    switch (opçoes) {
+      case "1":
+        resultado = calcularAreaTriangulo();
+        break;
+      case "2":
+        resultado = calcularAreaRetangulo();
+        break;
+      case "3":
+        resultado = calcularAreaQuadrado();
+        break;
+      case "4":
+        resultado = calcularAreatrapezio();
+        break;
+      case "5":
+        resultado = calcularAreaCirculo();
+        break;
+      case "6":
+        resultado = calcularAreaLosango();
+        break;
+      case "7":
+        alert(`Saindo...`);
+        break;
+      default:
+        alert(`Opção invalida...`);
+        break;
+    }
+
+    if (resultado) {
+      alert(`Resultado: ${resultado}`);
+    }
   }
 }
+
+executar();

@@ -11,8 +11,8 @@ console.log(resultado);
 
 function criarProduto(nome, preco, estoque) {
   const produto = {
-    nome: nome,
-    preco: preco,
+    nome:,
+    preco:,
     estoque: 1,
   };
 

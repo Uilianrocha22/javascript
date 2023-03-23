@@ -15,13 +15,13 @@ console.log(arr);
 
 //Remover elementos
 // POP === remover do final:
-let ultimoElemento = arr.pop();
+const ultimoElemento = arr.pop();
 console.log(arr);
 console.log(ultimoElemento);
 
 //Remover elementos
 // SHIFT === remover do inicio:
-primeiroElemento = arr.shift();
+let primeiroElemento = arr.shift();
 console.log(arr);
 console.log(primeiroElemento);
 

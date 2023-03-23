@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>DOOM</title>
+  </head>
+  <body>
+    <h1>Trabalhando com formulários</h1>
+    <hr />
+
+    <h2>Montar Pedido</h2>
+
+    <form id="orderForm">
+      <div>
+        <label for="name">Nome:</label>
+        <br />
+        <input type="text" name="name" id="name" />
+        <br /><br />
+        <label for="address">Endereço de entrega:</label>
+        <br />
+        <input type="text" name="address" id="address" />
+        <br /><br />
+        <label for="breadType">Tipo de pão:</optgroup></label>
+     
+      <br>
+      <select name="breadType" id="breadType">
+         <option selected disabled>Selecione uma opção</option>
+         <option value="3 queijos">3 queijos</option>
+         <option value="Parmesão e orégano">Parmesão e orégano</option>
+         <option value="9 grãos">9 grãos</option>
+         <option value="Italiano branco">Italiano branco</option>
+         <option value="Granola salgada">Granola salgada</option>
+         <option value="Manteiga temperada">Manteiga temperada</option>
+      </select>
+     
+    </div>
+      <br><br>
+      <div>
+        <label for="main">Principal:</label>
+        <br>
+        <input type="radio" name="main" id="main1" value="Carne">
+        <label for="main1">Carne</label>
+        <input type="radio" name="main" id="main2" value="Frango">
+        <label for="main2">Frango</label>
+        <input type="radio" name="main" id="main3" value="Vegano">
+        <label for="main3">Vegano</label>
+      </div>
+        <br><br>
+        <div>
+          <label for="salad">Salada:</label>
+          <br>
+          <input type="checkbox" name="salad" id="salad1" value="Alface">
+          <label for="salad1">Alface</label>
+          <input type="checkbox" name="salad" id="salad2" value="Tomate">
+          <label for="salad2">Tomate</label>
+          <input type="checkbox" name="salad" id="salad3" value="Azeitonas">
+          <label for="salad3">Azeitonas</label>
+          <input type="checkbox" name="salad" id="salad4" value="Cenoura">
+          <label for="salad4">Cenoura</label>
+          <input type="checkbox" name="salad" id="salad5" value="Picles">
+          <label for="salad5">Picles</label>
+        </div>
+      
+      <br><br>
+
+      <div>
+        <label for="observations">Obeservações:</label>
+        <br>
+        <textarea name="observations" id="observations" cols="30" rows="6"></textarea>
+      </div>
+      <br><br>
+
+      <button type="submit">Fechar pedido</button>
+      
+    </form>
+
+
+    <script src="trabalhandoComFormularios.js"></script>
+
+  </body>
+</html>

@@ -1,4 +1,5 @@
 let objeto = {};
+
 //posso aramzenar dados
 objeto.nome = "uilian";
 objeto.sobrenome = "oliveira";
@@ -9,7 +10,7 @@ objeto.hobbies = ["futebol", "academia", "programação"];
 
 //posso armazenar OBJETO dentro do objeto
 objeto.endereço = {
-  rua: "domindos bispo de oliveira",
+  rua: "domingos bispo de oliveira",
   bairro: "jardim maria do carmo",
   cidade: "guarulhos",
   numero: 172,

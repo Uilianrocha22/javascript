@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos no DOOM</title>
+
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        padding: 10px 50px;
+        background-color: green;
+        color: white;
+        border-radius: 14px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.496);
+      }
+      .btn:hover {
+        background-color: white;
+        color: green;
+        transition: 0.8s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Eventos no HTML</h1>
+      <div>
+        <label for="onMouseEnter">Entrada do mouse:</label>
+        <input type="text" id="onMouseEnter" onmouseenter="onMouseEnter()" />
+      </div>
+      <br />
+      <div>
+        <label for="onChange">Mudança de valor:</label>
+        <input type="text" id="onChange" onchange="onChange()" />
+      </div>
+      <br />
+      <div>
+        <label for="onFocus">Entrada de foco:</label>
+        <input type="text" id="onFocus" onfocus="alert(`Foco no elemento !`)" />
+      </div>
+      <br />
+      <div>
+        <label for="onBlur">Saida de foco:</label>
+        <input type="text" id="onBlur" onblur="alert(`Saindo do foco !`)" />
+      </div>
+      <br />
+      <button class="btn" onclick="onClick()">Clique-me !</button>
+    </div>
+
+    <script src="eventosDoom.js"></script>
+  </body>
+</html>

@@ -3,8 +3,8 @@ let opçoes = "";
 
 while (opçoes !== "3") {
   let pacientes = "";
-  let i = 0;
-  for (; i < fila.length; i++) {
+
+  for (let i = 0; i < fila.length; i++) {
     pacientes += `${i + 1}°- ${fila[i]}\n`;
 
     //i + 1 + "°- " + fila[i] + "\n";
