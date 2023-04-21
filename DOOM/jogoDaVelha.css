@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.campPlayer {
+  margin: 4rem;
+}
+.campPlayer input {
+  margin: 0 2rem 0 0;
+}
+
+#gameBoard {
+  background-color: #232323;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+}
+
+#gameBoard div {
+  background-color: #ddd;
+
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#gameBoard div.win {
+  background-color: #25a340;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 665px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campPlayer {
+    margin: 2rem;
+  }
+  .campPlayer input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem 0;
+  }
+
+  #start {
+    margin-left: 2.5rem;
+  }
+}

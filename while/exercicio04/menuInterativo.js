@@ -3,11 +3,11 @@ let opçoes = "";
 while (opçoes <= 4) {
   opçoes = Number(
     prompt(
-      `informe o seu time do coração :\n
-    1 -Palmeiras
-    2 -corintians
-    3 -São paulo
-    4 -Santos
+      `informe o mascote do seu time :\n
+    1 -Porco
+    2 -Gavião
+    3 -Bambi
+    4 -Peixe
     5 -Encerrar
   `
     )

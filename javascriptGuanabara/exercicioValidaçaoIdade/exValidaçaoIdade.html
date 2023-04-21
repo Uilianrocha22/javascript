@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="exHoraDoDia.css" />
+    <link rel="stylesheet" href="exValidaçaoIdade.css" />
+    <title>Validação de idade</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+      <div>
+        <p>
+          Ano de nascimento:
+          <input type="number" name="txtano" id="txtano" min="0" />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" name="radiosex" id="masculino" />
+          <label for="masculino">Maculino</label>
+          <input type="radio" name="radiosex" id="feminino" />
+          <label for="feminino">Feminino</label>
+        </p>
+        <p>
+          <input
+            id="btnVerificar"
+            type="button"
+            value="Verificar"
+            onclick="verificador()"
+          />
+        </p>
+      </div>
+      <div id="result">Preencha os dados acima para ver o resultado!</div>
+    </section>
+
+    <footer>
+      <p>&copy;<strong>Curso em video</strong></p>
+    </footer>
+
+    <script src="exValidaçaoIdade.js"></script>
+  </body>
+</html>
