@@ -1,8 +1,5 @@
 let imoveis = [];
 let opçoes = "";
-let quartos = "";
-let banheiros = "";
-let garagem = "";
 
 while (opçoes !== "3") {
   //   let cartas = "";
@@ -11,7 +8,7 @@ while (opçoes !== "3") {
   //  }
 
   opçoes = prompt(
-    `Cadastrados de imoveis:\n
+    `Cadastrados de imoveis: ${imoveis.length}\n
 Escolha uma opção:
 1. salvar novo imovel
 2. imoveis cadastrados
@@ -22,13 +19,18 @@ Escolha uma opção:
     case "1":
       alert(`preencha as informações a seguir:\n`);
       let nome = prompt(`Nome do proprietario`);
-      quartos = prompt(`Quantidade de quartos`);
-      banheiros = prompt(`Quantidade de banheiros`);
-      garagem = prompt(`possui garagem`);
+      let quartos = prompt(`Quantidade de quartos`);
+      let banheiros = prompt(`Quantidade de banheiros`);
+      let garagem = prompt(`possui garagem`);
       imoveis.unshift(nome);
       break;
     case "2":
-      let imoveisCadastrados = alert(`imoveis cadastrados:${imoveis.length}`);
+      alert(`imoveis cadastrados: ${imoveis.length}
+      nome: ${nome}
+      quartos: ${quartos}
+      banheiros: ${banheiros}
+      garagem: ${garagem}`);
+
       break;
     case "3":
       alert(`Encerrando...`);

@@ -35,10 +35,10 @@ while (opçoes !== "3") {
       for (let i = 0; i < imoveis.length; i++) {
         alert(
           `imóvel : ${i + 1}
-            -Proprietario: ${imoveis[i].proprietario}
-            -Quartos: ${imoveis[i].quartos}
-            -Banheiros: ${imoveis[i].banheiros}
-            -Possui garagem?: ${imoveis[i].garagem}
+            Proprietario: ${imoveis[i].proprietario}
+            Quartos: ${imoveis[i].quartos}
+            Banheiros: ${imoveis[i].banheiros}
+            Possui garagem: ${imoveis[i].garagem}
             `
         );
       }

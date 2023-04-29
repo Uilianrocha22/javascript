@@ -15,6 +15,14 @@ for (let indice = 0; indice < number.length; indice++) {
 }
 console.log(number);
 
+// iterando com (For(simplificado))   ------------------------------------------------------------------------------
+
+for (let indice in number) {
+  console.log(`A pocição ${indice} tem o número ${number[indice]}`);
+}
+
+console.log(number);
+
 // iterando com (WHILE)  ----------------------------------------------------------------------------
 let indice = 0;
 
@@ -30,14 +38,6 @@ console.log(number);
 number.forEach(function (numero, posição, comprimento) {
   console.log({ numero, posição, comprimento });
 });
-console.log(number);
-
-// iterando com (For(simplificado))   ------------------------------------------------------------------------------
-
-for (let indice in number) {
-  console.log(`A pocição ${indice} tem o número ${number[indice]}`);
-}
-
 console.log(number);
 
 //console.log(`A posição do número 8 é = ${posiçao}`);

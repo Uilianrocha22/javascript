@@ -48,5 +48,5 @@ Escolha uma opção:
   //  } else if (opçoes === "3") {
   //    alert(`Encerrando...`);
   //  } else {
-  //    alert(`opção invalida!`);
-}
+  //    alert(`opção invalida!`);}
+
