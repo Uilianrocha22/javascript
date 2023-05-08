@@ -24,6 +24,6 @@ console.log({ towns, townsCopy, townsClone });
 const townsObj = { ...towns };
 const townsObjClone = { ...townsObj };
 
-townsObjClone.test = "Test";
+townsObjClone.quatro = "Test";
 
 console.log({ townsObj, townsObjClone });

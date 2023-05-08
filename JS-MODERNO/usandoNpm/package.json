@@ -1,0 +1,14 @@
+{
+  "name": "primeiro-projeto-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Uilian\"",
+  "license": "ISC",
+  "dependencies": {
+    "save": "^2.9.0"
+  }
+}

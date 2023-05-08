@@ -1,0 +1,64 @@
+// Média aritmética simples
+let average = (...numbers) => {
+  const sum = numbers.reduce((accum, num) => accum + num, 0);
+  return sum / numbers.length;
+};
+
+console.log(`Média aritmética simples (Moderna): ${average(3, 6, 10, 9)} `);
+
+// Média ponderada
+
+const weightedAverage = (...entries) => {
+  const sum = entries.reduce(
+    (accum, { number, weight }) => accum + number * (weight ?? 1),
+    0
+  );
+  const weightSum = entries.reduce(
+    (accum, entries) => accum + (entries.weight ?? 1),
+    0
+  );
+  return sum / weightSum;
+};
+
+console.log(
+  `Média ponderada : ${weightedAverage(
+    { number: 9, weight: 3 },
+    { number: 7, weight: 1 },
+    { number: 10 }
+  )}`
+);
+
+// Média mediana
+
+const median = (...numbers) => {
+  const orderedNumberns = [...numbers].sort((a, b) => a - b);
+  const middle = Math.floor(orderedNumberns.length / 2);
+
+  if (orderedNumberns.length % 2 !== 0) {
+    return orderedNumberns[middle];
+  }
+
+  const firstMedian = orderedNumberns[middle - 1];
+  const secondMedian = orderedNumberns[middle];
+
+  return average(firstMedian, secondMedian);
+};
+
+console.log(`Mediana: ${median(2, 5, 99, 4, 42, 7)}
+`);
+console.log(`Mediana: ${median(15, 14, 8, 7, 3)}`);
+
+// Média moda
+
+const mode = (...numbers) => {
+  // array bidimensional == [ [n, qtd],[n, qtd],[n,qtd] ]
+
+  const quantities = numbers.map((num) => [
+    num,
+    numbers.filter((n) => num === n).length,
+  ]);
+  quantities.sort((a, b) => b[1] - a[1]);
+  return quantities[0][0];
+};
+
+console.log(`Moda: ${mode(1, 1, 5, 4, 9, 7, 4, 3, 5, 2, 4, 0, 4, 4)}`);
