@@ -23,7 +23,7 @@ function addPlayer() {
   }
 }
 
-function removePlayer() {
+document.getElementById("removePlayer").addEventListener("click", function () {
   const number = document.getElementById(`numberToRemove`).value;
   const playerToRemove = document.getElementById(`player- ${number}`);
 
@@ -38,5 +38,7 @@ function removePlayer() {
 
     playerToRemove.remove();
     document.getElementById(`numberToRemove`).value = ``;
+  } else {
+    document.getElementById(`numberToRemove`).value = ``;
   }
-}
+});

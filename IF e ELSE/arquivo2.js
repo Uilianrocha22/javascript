@@ -1,5 +1,5 @@
-var velocidade = 75;
-var idade = 19;
+let velocidade = 55;
+let idade = 19;
 
 console.log(`A velocidade do seu carro é ${velocidade}km/h`);
 if (velocidade > 60) {
