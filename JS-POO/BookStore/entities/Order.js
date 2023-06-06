@@ -9,6 +9,7 @@ module.exports = class Order {
         throw new Error(`Quantidade insuficiente em estoque.`);
       }
     });
+
     this.#items = items;
     this.#user = user;
     this.#total = items.reduce(
