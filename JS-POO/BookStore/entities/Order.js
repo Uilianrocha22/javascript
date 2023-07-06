@@ -1,6 +1,6 @@
 module.exports = class Order {
   #total;
-  #items;
+  #items; // === product e quantity
   #user;
 
   constructor(items, user) {
