@@ -15,9 +15,10 @@ async function createCountryCard(country) {
 }
 
 async function getCountries() {
-  const response = await fetch(`https://restcountries.com/v3.1/all`);
-  const countries = await response.json();
+  const response = await fetch(`https://restcountries.com/v3.1/all`).then(
+    (res) => res.json()
+  );
 
-  countries.forEach(createCountryCard);
+  response.forEach(createCountryCard);
 }
 getCountries();

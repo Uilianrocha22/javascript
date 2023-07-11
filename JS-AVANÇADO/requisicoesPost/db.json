@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Olá mundo",
+      "content": "Loren ipsum dolor sit ...",
+      "author": "Uilian"
+    },
+    {
+      "id": 2,
+      "title": "Requisições POST com javascript",
+      "content": "Loren ipsum dolor sit two...",
+      "author": "Uilian"
+    },
+    {
+      "title": "aprendendo requisições POST",
+      "author": "Uilian",
+      "content": "requisições POST via javascript",
+      "id": 3
+    }
+  ]
+}
