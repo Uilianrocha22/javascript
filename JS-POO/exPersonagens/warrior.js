@@ -7,9 +7,9 @@ class Warrior extends Character {
     this.position = "attacking";
   }
 
-  attack(person) {
+  attack(targetPerson) {
     if (this.position === "attacking") {
-      person.lifePts -= this.attackPts - person.defensePts;
+      targetPerson.lifePts -= this.attackPts - targetPerson.defensePts;
     }
   }
 

@@ -1,10 +1,12 @@
+// operador de coalescenciNula só ignora (null ou undefined)
+
 const a = 0; // 0 === false na operação lógica , porém 0 não é nulo
 
 const b = null; // null === false
 
 const c = "teste"; // string === true
 
-const d = undefined;
+const d = undefined; // ===  undefined
 
 console.log(a || b || c);
 console.log(a ?? b ?? c);

@@ -6,8 +6,8 @@ class Character {
     this.defensePts = defensePts;
   }
 
-  attack(person) {
-    person.lifePts -= this.attackPts - person.defensePts;
+  attack(targetPerson) {
+    targetPerson.lifePts -= this.attackPts - targetPerson.defensePts;
   }
 }
 

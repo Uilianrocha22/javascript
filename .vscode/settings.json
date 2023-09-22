@@ -23,5 +23,6 @@
     "segundos",
     "Situação",
     "utilizar"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }

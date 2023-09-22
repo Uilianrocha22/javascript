@@ -9,8 +9,8 @@ class Post {
     this.createdAt = new Date();
   }
 
-  addComment(username, content) {
-    this.comments.push(new Comment(username, content));
+  addComment(username, comment) {
+    this.comments.push(new Comment(username, comment));
   }
 }
 

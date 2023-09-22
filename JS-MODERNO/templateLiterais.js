@@ -1,5 +1,5 @@
-const name = "Uilian";
+const nome = "Uilian";
 
-console.log(`Olá, ${name}!
+console.log(`Olá, ${nome}!
 Estamos em ${Date()}
 2 + 2 = ${2 + 2}`);

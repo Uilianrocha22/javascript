@@ -13,7 +13,7 @@
 // };
 
 //-------------------------------------------
-// Método PascalCase = primeira letra maiúscula
+//Função construtora Método PascalCase = primeira letra maiúscula
 
 function Book(title, pages, tags, author) {
   this.title = title;
@@ -42,7 +42,9 @@ const author = {
 };
 
 const eragon = new Book("Eragon", 468, tags, author);
+
 const drakarys = new Book("Drakarys", 900, tags, author);
+
 eragon.publish();
 eragon.addOnStock(50);
 console.log(eragon);

@@ -9,14 +9,19 @@ class Product {
   addToStock(quantity) {
     this.inStock += Number(quantity);
   }
+
   calculateDiscontAvista(discount) {
-    this.price -= discount;
+    return this.price * ((100 - discount) / 100);
   }
 }
-const celular = new Product("mi9", "xiaomi mi9 , 64gb , 2gb ram", 1850);
+
+const celular = new Product("mi9", "xiaomi mi9 , 64gb , 2gb ram", 90);
 console.log(celular);
 
-celular.addToStock(450);
-celular.calculateDiscontAvista(100);
+celular.addToStock(99);
+
+const priceDescount = celular.calculateDiscontAvista(50);
 
 console.log(celular);
+console.log(priceDescount);
+console.log(celular.calculateDiscontAvista(10));

@@ -2,7 +2,7 @@ const dayjs = require("dayjs");
 
 function birthday(date) {
   const birthday = dayjs(date);
-  const today = dayjs();
+  const today = dayjs(); // dayjs() === data atual
 
   const ageInYears = today.diff(birthday, "year");
   const nextBirthday = birthday.add(ageInYears + 1, "year");
@@ -15,4 +15,4 @@ function birthday(date) {
   );
 }
 
-birthday("2022-05-18");
+birthday("1998-05-19");

@@ -6,12 +6,13 @@ class Mage extends Character {
     this.magicPts = magicPts;
   }
 
-  attack(person) {
-    person.lifePts -= this.attackPts + this.magicPts - person.defensePts;
+  attack(targetPerson) {
+    targetPerson.lifePts -=
+      this.attackPts + this.magicPts - targetPerson.defensePts;
   }
 
-  mageLife(person) {
-    person.lifePts += this.magicPts * 2;
+  mageLife(targetPerson) {
+    targetPerson.lifePts += this.magicPts * 2;
   }
 }
 

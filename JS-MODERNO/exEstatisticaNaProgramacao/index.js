@@ -6,7 +6,7 @@ let average = (...numbers) => {
 
 console.log(`Média aritmética simples (Moderna): ${average(3, 6, 10, 9)} `);
 
-// Média ponderada
+// Média aritmética ponderada
 
 const weightedAverage = (...entries) => {
   const sum = entries.reduce(
@@ -14,7 +14,7 @@ const weightedAverage = (...entries) => {
     0
   );
   const weightSum = entries.reduce(
-    (accum, entries) => accum + (entries.weight ?? 1),
+    (accum, entri) => accum + (entri.weight ?? 1),
     0
   );
   return sum / weightSum;
@@ -28,7 +28,7 @@ console.log(
   )}`
 );
 
-// Média mediana
+// Média aritmética mediana
 
 const median = (...numbers) => {
   const orderedNumberns = [...numbers].sort((a, b) => a - b);
@@ -48,10 +48,10 @@ console.log(`Mediana: ${median(2, 5, 99, 4, 42, 7)}
 `);
 console.log(`Mediana: ${median(15, 14, 8, 7, 3)}`);
 
-// Média moda
+// Média aritmética moda
 
 const mode = (...numbers) => {
-  // array bidimensional == [ [n, qtd],[n, qtd],[n,qtd] ]
+  //(quantities) retorna um array bidimensional == [ [n, qtd],[n, qtd],[n, qtd] ]
 
   const quantities = numbers.map((num) => [
     num,
@@ -61,4 +61,4 @@ const mode = (...numbers) => {
   return quantities[0][0];
 };
 
-console.log(`Moda: ${mode(1, 1, 5, 4, 9, 7, 4, 3, 5, 2, 4, 0, 4, 4)}`);
+console.log(`Moda: ${mode(1, 1, 5, 4, 9, 7, 4, 3, 5, 2, 4, 0, 4)}`);

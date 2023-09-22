@@ -1,8 +1,8 @@
 module.exports = {
   entry: {
-    index: "./src/index.js",
+    uil: "./src/index.js",
   },
-  mode: "development",
+  mode: "production",
   module: {
     rules: [
       {

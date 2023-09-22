@@ -8,6 +8,7 @@ const addr = new Address(
   "Guarulhos",
   "SP"
 );
+
 const uilian = new Person("Uilian", addr);
 console.log(uilian);
 console.log(uilian.address.fullAddress());

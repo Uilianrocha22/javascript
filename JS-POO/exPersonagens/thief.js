@@ -1,12 +1,12 @@
 const Character = require("./character");
 
 class Thief extends Character {
-  constructor(name, lifePts, attackPts, defensePts) {
-    super(name, lifePts, attackPts, defensePts);
-  }
+  // constructor(name, lifePts, attackPts, defensePts) {
+  //   super(name, lifePts, attackPts, defensePts);
+  // }
 
-  attack(person) {
-    person.lifePts -= (this.attackPts - person.defensePts) * 2;
+  attack(targetPerson) {
+    targetPerson.lifePts -= (this.attackPts - targetPerson.defensePts) * 2;
   }
 }
 

@@ -1,40 +1,77 @@
-class Vehicle {
+// class Vehicle {
+//   move() {
+//     console.log(`O veiculo está se movendo.`);
+//   }
+// }
+
+// class Car extends Vehicle {
+//   move() {
+//     console.log(`O carro está se movendo.`);
+//   }
+// }
+
+// class Ship extends Vehicle {
+//   move() {
+//     console.log(`O navio está se navegando.`);
+//   }
+// }
+
+// class Aircraft extends Vehicle {
+//   move(speed) {
+//     console.log(`A aeronave está se voando a ${speed}km/h.`);
+//   }
+// }
+
+// const fusca = new Car();
+// const submarino = new Ship();
+// const jato = new Aircraft();
+
+// fusca.move();
+// submarino.move();
+// jato.move(80);
+
+// function start(vehicle) {
+//   console.log(`Iniciando um veiculo...`);
+//   vehicle.move();
+// }
+
+// start(fusca);
+// start(submarino);
+// start(jato);
+
+class Esporte {
   move() {
-    console.log(`O veiculo está se movendo.`);
+    console.log(`Meu esporte preferido...`);
   }
 }
 
-class Car extends Vehicle {
+class Futeboll extends Esporte {
   move() {
-    console.log(`O carro está se movendo.`);
+    console.log(`Meu esporte preferido é Futebol`);
   }
 }
 
-class Ship extends Vehicle {
+class Basquete extends Esporte {
   move() {
-    console.log(`O navio está se navegando.`);
+    console.log(`Meu esporte preferido é Basquete`);
   }
 }
 
-class Aircraft extends Vehicle {
-  move(speed) {
-    console.log(`A aeronave está se voando a ${speed}km/h.`);
+class Boxe extends Esporte {
+  move() {
+    console.log(`Meu esporte preferido é Boxe`);
   }
 }
 
-const fusca = new Car();
-const submarino = new Ship();
-const jato = new Aircraft();
+const futebol = new Futeboll();
+const basquete = new Basquete();
+const boxe = new Boxe();
 
-fusca.move();
-submarino.move();
-jato.move(80);
-
-function start(vehicle) {
-  console.log(`Iniciando um veiculo...`);
-  vehicle.move();
+function esportes(sport, name) {
+  console.log(`Qual seu esporte preferido ${name} ?`);
+  sport.move();
 }
 
-start(fusca);
-start(submarino);
-start(jato);
+esportes(futebol, "Uilian");
+esportes(basquete, "Natalia");
+esportes(boxe, "Carlos");

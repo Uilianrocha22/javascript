@@ -21,6 +21,7 @@ Reservation.showBaseFee();
 
 const r1 = new Reservation(3, "250", 5);
 console.log(r1);
+
 console.log(`Premium fee is ${Reservation.premiumFee}`);
 
 Reservation.baseFee = 200;

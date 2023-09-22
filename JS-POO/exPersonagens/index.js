@@ -22,3 +22,14 @@ console.table({ arthur, beatrice, cain });
 arthur.mageLife(arthur);
 beatrice.attack(cain);
 console.table({ arthur, beatrice, cain });
+
+// EX objeto ----------------------------------------
+// const pessoa = {
+// };
+// console.log(pessoa);
+
+// pessoa.nome = "uilian";
+// pessoa.peso = 73;
+// pessoa.sexo = "masculino";
+
+// console.log(pessoa);

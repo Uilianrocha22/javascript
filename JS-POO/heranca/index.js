@@ -19,6 +19,8 @@ console.log(land.getPricePerSquareMeter());
 console.log(someHouse);
 console.log(someHouse.getPricePerSquareMeter());
 
+console.log(someHouse instanceof House && someHouse instanceof Property);
+
 class Apartment extends Property {
   constructor(area, price, number) {
     // this.area = area  Gera um Error

@@ -43,7 +43,7 @@ const avengers = [
   "Hulk",
 ];
 
-const avengerStarting = avengers.filter((hero) => hero[0] === "H");
+const avengerStarting = avengers.filter((hero) => hero[0] === "C");
 
 console.log(avengers);
 console.log(avengerStarting);
