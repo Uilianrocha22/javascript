@@ -1,0 +1,29 @@
+{
+  "transactions": [
+    {
+      "name": "salário",
+      "amount": 1800,
+      "id": 1
+    },
+    {
+      "name": "pix",
+      "amount": 700,
+      "id": 2
+    },
+    {
+      "name": "academia",
+      "amount": -60,
+      "id": 4
+    },
+    {
+      "name": "internet",
+      "amount": -100,
+      "id": 5
+    },
+    {
+      "name": "servir",
+      "amount": -140,
+      "id": 6
+    }
+  ]
+}

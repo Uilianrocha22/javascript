@@ -1,4 +1,4 @@
-const team = prompt("Informe a cor do seu time do coração? :");
+const team = prompt("Informe a cor do seu time do? :");
 
 if (team === "verde e branco") {
   alert("Seu time do coração é o Palmeiras");

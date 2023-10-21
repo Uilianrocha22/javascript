@@ -1,5 +1,5 @@
 function validateEmail(email) {
-  if (!email.match(/\w{2,}@[a-zA-Z]{2,}\.[a-zA-Z]{2,}/)) {
+  if (!email.match(/\w{2,}[a-zA-Z0-9]@[a-zA-Z]{2,}\.[a-zA-Z]{2,}/)) {
     const err = new Error("Email inválido.");
     err.input = "email";
     throw err;

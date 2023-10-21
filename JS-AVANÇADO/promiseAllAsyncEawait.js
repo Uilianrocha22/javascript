@@ -6,7 +6,7 @@ function waitFor(seconds) {
   });
 }
 
-const numbers = [4, 5, 9, 13, 77];
+const numbers = [2, 4, 6, 8, 10];
 
 async function execute() {
   console.time("tempo");

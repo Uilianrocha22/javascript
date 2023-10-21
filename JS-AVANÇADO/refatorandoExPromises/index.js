@@ -2,13 +2,15 @@ async function imc(Weight, height) {
   if (typeof Weight !== `number` || typeof height !== `number`) {
     return Promise.reject(`arguments must be of type number`);
   }
-  return Weight / (height * height);
+  return Promise.resolve(Weight / (height * height));
 }
 
 async function showImc(Weight, height) {
   try {
     console.log(`Calculando IMC para peso ${Weight} e altura ${height}`);
+
     const resultImc = await imc(Weight, height);
+
     if (resultImc < 18.5) console.log(`Situação ${resultImc}: Magreza.`);
     else if (resultImc < 25) console.log(`Situação ${resultImc}: Normal.`);
     else if (resultImc < 30) console.log(`Situação ${resultImc}: Sobrepeso.`);

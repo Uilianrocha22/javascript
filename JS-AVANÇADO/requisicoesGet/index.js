@@ -1,4 +1,4 @@
-async function createCountryCard(country) {
+function createCountryCard(country) {
   const card = document.createElement(`div`);
   card.classList.add(`country`);
 
@@ -21,4 +21,5 @@ async function getCountries() {
 
   response.forEach(createCountryCard);
 }
+
 getCountries();
