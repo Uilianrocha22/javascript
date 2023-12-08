@@ -1,3 +1,5 @@
+// Escreva uma função que receba um array bidimensional de inteiros e retorna um único array contendo todos os números em ordem ascendente(crescente)
+
 function ArrayNave(arr) {
   const newArray = [];
 

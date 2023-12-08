@@ -14,5 +14,6 @@ objeto.endereço = {
   bairro: "jardim maria do carmo",
   cidade: "guarulhos",
   numero: 172,
+  500: 0,
 };
 console.log(objeto);

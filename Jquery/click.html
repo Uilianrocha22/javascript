@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  </head>
+  <body>
+    <p class="p1">Se você clicar aqui.</p>
+    <p class="p2">Aqui também!!</p>
+
+    <script>
+      $(document).ready(() => {
+        $(".p1").mouseenter(function () {
+          $(this).css("color", "red");
+        });
+        $(".p2").click(function () {
+          $(this).css("color", "blue");
+        });
+      });
+    </script>
+  </body>
+</html>
